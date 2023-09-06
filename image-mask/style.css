@@ -1,0 +1,43 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+.main {
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-content: stretch;
+  justify-content: center;
+  -webkit-mask-image: radial-gradient(circle at 33% 50%,
+      black 33%,
+      rgba(0, 0, 0, 0) 34%),
+    radial-gradient(circle at 66% 50%, black 33%, rgba(0, 0, 0, 0) 34%);
+  mask-image: 100%;
+  webkit-mask-image: no-repeat;
+  webkit-mask-image: center;
+
+
+
+}
+
+body {
+  background: black;
+
+  padding-right: 17px;
+  /* Increase/decrease this value for cross-browser compatibility */
+  box-sizing: content-box;
+}
+
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.main img {
+  width: 150%;
+  overflow: hidden;
+}
